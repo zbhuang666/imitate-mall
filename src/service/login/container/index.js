@@ -1,5 +1,5 @@
 import {GETUSERSSUCCESS} from "../constant";
-import {queryAllUsers} from "../../../dao/login";
+import {authentication, queryAllUsers, test} from "../../../dao/user";
 import { connect } from "react-redux";
 import { getAllUsers } from "../action";
 
@@ -14,6 +14,22 @@ const mapDispatchToProps = (dispatch, state) => {
                 dispatch(getAllUsers(GETUSERSSUCCESS, res))
             }).catch(error=> {
                 alert(error);
+            })
+        },
+        authentication:(username,password)=>{
+            const param = {
+                username:username,
+                password:password
+            };
+            authentication(param).then(res => {
+                localStorage.setItem("AUTH-TOKEN",res.data.token);
+            }).catch(error=>{
+                alert(error);
+            })
+        },
+        test : ()=> {
+            test().then(res=> {
+
             })
         }
     };

@@ -1,0 +1,47 @@
+.login{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.loginCenter{
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    background-color: ivory;
+}
+.login-left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: #ff6b78;
+}
+.login-right{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    background-color: #51ebff;
+}
+.login-button{
+    margin-left: 40%;
+    margin-top: 10%;
+    width: 60%;
+}
+.name input{
+    margin-top: 30%;
+    margin-left: 10%;
+    width: 60%;
+    height: 30%;
+}
+.password input{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 60%;
+    height: 30%;
+}

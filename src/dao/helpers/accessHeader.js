@@ -19,10 +19,12 @@ const analysisHeader = (header, extra) => {
  * @returns {{Accept: string, "Accept-Language": string, "Content-Type": string}}
  */
 const accessHeadersInfo = (extra) => {
+    const token = localStorage.getItem("AUTH-TOKEN");
     let header = {
         'Accept-Language': 'zh-CN',
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        "token":token
     };
     analysisHeader(header, extra);
     return header
