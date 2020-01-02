@@ -6,7 +6,7 @@ export default class Routers extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/" component={LoginWrap} />
+                    <Route path="/login" component={LoginWrap} />
                 </Switch>
             </Router>
         );
