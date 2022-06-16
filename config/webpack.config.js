@@ -112,7 +112,7 @@ module.exports = function(webpackEnv) {
             // which in turn let's users customize the target behavior as per their needs.
             postcssNormalize(),
           ],
-          sourceMap: isEnvProduction && shouldUseSourceMap,
+          sourceMap: true,
         },
       },
     ].filter(Boolean);
